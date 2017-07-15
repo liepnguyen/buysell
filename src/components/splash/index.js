@@ -17,15 +17,13 @@ export default class Splash extends Component {
     const resetAction = NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({ routeName: 'MainNavigator' })
+        NavigationActions.navigate({ routeName: 'Main' })
       ]
     })
     this.props.navigation.dispatch(resetAction)
   }
 
 	render() {
-    const { navigate } = this.props.navigation;
-
 		return (
       <View style={styles.wrapper}>
         <Text style={styles.title}>Hello World</Text>
